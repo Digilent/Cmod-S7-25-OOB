@@ -1,0 +1,66 @@
+# Blacklist everything
+/**
+
+# Root: Whitelist the necessary files and folders, this gets everything from inside them too
+!.gitignore
+!.gitmodules
+!README.md
+!LICENSE
+!proj/
+!repo/
+!sdk/
+!src/
+
+# Project Directory (Vivado Workspace)
+proj/**
+!proj/project_info.tcl
+
+# SDK Workspace: Edit this section to provide the correct names for APPLICATION, BSP, and HW_PLATFORM
+sdk/**
+# !sdk/cora_xadc
+# sdk/cora_xadc/**
+# !sdk/cora_xadc/.project
+# !sdk/cora_xadc/.cproject
+# !sdk/cora_xadc/src
+# !sdk/cora_xadc/src/**
+# !sdk/cora_xadc_bsp
+# sdk/cora_xadc_bsp/**
+# !sdk/cora_xadc_bsp/.project
+# !sdk/cora_xadc_bsp/.cproject
+# !sdk/cora_xadc_bsp/.sdkproject
+# !sdk/cora_xadc_bsp/system.mss
+# !sdk/cora_xadc_bsp/Makefile
+# !sdk/design_1_wrapper_hw_platform_0
+# sdk/design_1_wrapper_hw_platform_0/**
+# !sdk/design_1_wrapper_hw_platform_0/.project
+
+# IP Repository: Whitelist all contents of local. Blacklist all contents of everything else.
+repo/**
+!repo/vivado-library
+repo/vivado-library/**
+!repo/local
+!repo/local/**
+!repo/cache
+repo/cache/**
+
+# Sources directory:
+src/**
+!src/bd
+src/bd/**
+!src/bd/system.tcl
+!src/constraints
+src/constraints/**
+!src/constraints/*.xdc
+!src/hdl
+src/hdl/**
+!src/hdl/*.v
+!src/hdl/*.vhd
+!src/ip
+src/ip/**
+!src/ip/**/*.xci
+!src/other
+src/other/**
+!src/other/**
+
+# Keep important empty folders
+!**/.keep
