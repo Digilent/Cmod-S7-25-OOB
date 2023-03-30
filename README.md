@@ -1,6 +1,8 @@
 Cmod S7-25 Out-Of-Box Demo
 ==============
 
+**Note:** This demo has been migrated to another repo. You can find instructions for working with the demo here: [Digilent Reference - Cmod S7 Out-of-Box Demo](https://digilent.com/reference/programmable-logic/cmod-s7/demos/oob). Sources are version controlled in the [Cmod-S7](https://github.com/Digilent/Cmod-S7) repo.
+
 Description
 --------------
 This project is a a simple Vivado demo using the Cmod S7-25's LEDs, RGB LED, buttons, and USB-UART bridge, written in Verilog. When programmed onto a Cmod S7, the demo will cycle the board's RGB LED from Blue to Green to Red to Black. The other LEDs will light up in sequence.
